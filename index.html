@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <form action="index.html" method="post">
+            <h1>Sign Up</h1>
+
+            <fieldset >
+                <legend><span class="number">1</span> Your basic info</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" >
+                <label for="password"> Password:</label>
+                <input type="password" id="password" name="user_password">
+                <label for="">Age:</label>
+                <input type="radio" id="under_13" name="user_age" value="under_13"><label for="under_13" class="light"> Under 13</label>
+
+                <br>
+                <input type="radio" id="over_13" name="user_age" value="over_13">
+                <label for="over_13" class="light"> Over 13</label>
+
+
+                
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <span class="number">1</span> Your profile </legend>
+                <label for="bio">Biography:</label>
+                <textarea name="user_bio" id="bio" ></textarea>
+
+                    <label for="job"> Job Role:</label>
+                    <select name="user_job" id="job">
+                        <optgroup label="web">
+                        <option value="php_developer">php end developer</option>
+                        <option value="phyton_developer">php end developer</option>
+                        </optgroup>
+                        <optgroup label="front">
+                        <option value="frontend_developer">python end developer</option>
+                        <option value="reails_developer">Rails developer</option>
+                        </optgroup>
+                    </select>
+
+                    <label> Interests</label>
+                    <input type="checkbox" id="development" value="interest_development" name="user_interest"> <label for="development" class="light">Development</label> <br>
+                    <input type="checkbox" id="design" value="interest_design" name="user_design"> <label for="design" class="light">Design</label> <br>
+                     
+                    <input type="checkbox" id="buisness" value="interest_business" name="user_business">
+                                        <label for="buisness" class="light">Buisness</label>
+                                        
+
+                <button type="submit"> Sign Up</button>
+            </fieldset>
+
+        </form>
+      
+      
+    </body>
+</html>
